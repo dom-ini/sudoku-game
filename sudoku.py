@@ -7,6 +7,7 @@ class Sudoku:
     """
     def __init__(self):
         self._board = [[0 for _ in range(9)] for _ in range(9)]
+        # the difficulty level depends on the number of blank squares - change it to modify difficulty
         self._difficulty = {0: 35, 1: 43, 2: 55, 3: 60}
 
     def print_board(self):
@@ -43,7 +44,7 @@ class Sudoku:
         """
         Main function, generates the sudoku board with the given difficulty
 
-        :param diff_chosen: the level of difficulty from 0 to 3 determining the number of pre-filled squares
+        :param diff_chosen: the level of difficulty from 0 to 3 determining the number of blank squares
         """
         self._generate_diagonals()
         self._generate_board(0, 0)
