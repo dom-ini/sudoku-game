@@ -723,6 +723,10 @@ class SudokuGUI:
         self._return_btn.update_text(text=self._strings['return_btn'])
         self._win_return_btn.update_text(text=self._strings['win_return_btn'])
 
+        # stats screen buttons
+        self._stats_return_btn.update_text(text=self._strings['stats_return_btn'])
+        self._stats_reset_btn.update_text(text=self._strings['stats_reset_btn'])
+
     def _change_language(self, language: str, update: bool = True):
         """
         Changes the in-game used strings to the given language
